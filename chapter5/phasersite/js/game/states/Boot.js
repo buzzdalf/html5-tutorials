@@ -8,7 +8,7 @@ Game.Boot.prototype = {
 //		this.load.image('preloaderBar', 'assets/images/preloader-bar.png');
 	},
 	create: function() {
-		this.game.stage.backgroundColor = '#ffffff';
+		this.game.stage.backgroundColor = '#7CCD7C';
 		this.input.maxPointers = 1;
 		if (this.game.device.desktop) {
 			this.scale.pageAlignHorizontally = true;

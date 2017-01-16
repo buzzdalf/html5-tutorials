@@ -7,7 +7,8 @@ Game.Preload = function () {
 
 Game.Preload.prototype = {
 	preload: function() {
-		this.load.image('rocket', 'assets/images/rocket.png');
+		this.load.image('bug', 'assets/images/bug.png');
+		this.load.image('box', 'assets/images/box.png');
 
 		this.load.onLoadComplete.add(this.onLoadComplete, this);
 	},

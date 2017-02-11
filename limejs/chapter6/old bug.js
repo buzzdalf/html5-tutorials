@@ -23,23 +23,6 @@ chapter6.Bug = function() {
             current_x = this.getPosition().x;
             current_y = this.getPosition().y;
             
-            //check limits and retract if too close to the edges
-            if(current_x > 400) {
-                this.speed_x = goog.math.uniformRandom(-0.05,-0.01);
-            }
-            
-            else if(current_x < 80) {
-                this.speed_x = goog.math.uniformRandom(0.01,0.05);
-            }
-            
-            if(current_y > 240) {
-                this.speed_y = goog.math.uniformRandom(-0.05,-0.01);
-            }
-            
-            else if(current_y < 80) {
-                this.speed_y = goog.math.uniformRandom(0.01,0.05);
-            }
-            
             this.setPosition(current_x+this.speed_x*dt,current_y+this.speed_y*dt);
         }
     }, this);
